@@ -149,6 +149,8 @@ a:hover {
     margin-left: 15%;
     display: inline-block;
     margin-top: 15rem;
+    margin-bottom: 15rem;
+    scroll-margin-top: 6rem;
 }
 
 .sobre h1 {
@@ -171,15 +173,6 @@ b {
     background: linear-gradient(90deg, #a855f7, #9333ea);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.avatar {
-    height: 30vh;
-    width: auto;
-    margin-left: 20%;
-    display: inline-block;
-    position: relative;
-    top: -12rem;
 }
 
 .curriculo {
@@ -213,4 +206,115 @@ b {
     /* Crescimento suave */
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
     /* Efeito de brilho */
+}
+
+.avatar {
+    height: 30vh;
+    width: auto;
+    margin-left: 20%;
+    display: inline-block;
+    position: relative;
+    top: -12rem;
+}
+
+.projetos h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #FFF;
+    text-align: center;
+}
+
+/* Estilos do carrossel */
+.carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+}
+
+/* Container de projetos */
+.projetos-container {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease-in-out;
+    width: 98%;
+}
+
+/* Cada projeto */
+.projeto {
+    background: linear-gradient(to bottom, #1b1919, #6317ce);
+    padding: 2rem;
+    border-radius: 1rem;
+    min-width: calc(100% / 3 - 1.5rem); /* Apenas 3 projetos visíveis */
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Imagem */
+.projeto img {
+    width: 100%;
+    border-radius: 0.625rem;
+}
+
+/* Títulos e textos sem fundo */
+.projeto h2, .projeto p {
+    background: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+/* Botões estilizados */
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 8.5rem;
+    background: none;
+}
+
+.deploy, .github {
+    background: purple;
+    color: white;
+    border: none;
+    padding: 0.625rem 0.9375rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.deploy:hover, .github:hover {
+    background: #9c27b0;
+}
+
+/* Mantém as setas fixas na tela */
+.anterior, .proximo {
+    position: fixed; /* Fixa a posição */
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 1000; /* Garante que fique sempre acima de outros elementos */
+}
+
+.anterior {
+    left: 10rem; /* Sempre visível à esquerda */
+    top: 45rem;
+}
+
+.proximo {
+    right: 10rem; /* Sempre visível à direita */
+    top: 45rem;
+}
+
+.anterior:hover, .proximo:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
