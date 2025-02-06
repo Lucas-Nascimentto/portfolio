@@ -7,9 +7,10 @@ const container = document.querySelector(".projetos-container");
 const btnAnterior = document.querySelector(".anterior");
 const btnProximo = document.querySelector(".proximo");
 
-let index = 0; // Índice do slide atual
+let index = 0; 
 const totalProjetos = document.querySelectorAll(".projeto").length;
-const visiveis = 3; // Quantidade de projetos visíveis
+const visiveis = 3; 
+const larguraProjeto = document.querySelector(".projeto").offsetWidth + 32; // Largura do projeto + gap (2rem = 32px)
 
 btnProximo.addEventListener("click", () => {
     if (index < totalProjetos - visiveis) {
@@ -26,6 +27,6 @@ btnAnterior.addEventListener("click", () => {
 });
 
 function atualizarCarrossel() {
-    const deslocamento = index * (100 / visiveis);
-    container.style.transform = `translateX(-${deslocamento}%)`;
+    const deslocamento = index * larguraProjeto; // Deslocamento em pixels
+    container.style.transform = `translateX(-${deslocamento}px)`;
 }

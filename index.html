@@ -15,7 +15,7 @@
         <a href="#home">Home</a>
         <a href="#sobre">Sobre</a>
         <a href="#projetos">Projetos</a>
-        <a href="">Contato</a>
+        <a href="#contato">Contato</a>
     </header>
 
     <section id="home" class="home">
@@ -29,11 +29,13 @@
             <img src="./assets/react.png" alt="React">
             <img src="./assets/nodejs.png" alt="NodeJS">
         </div>
+
         <img id="perfil" src="./assets/Foto de perfil para linkedin redondo simples degradê preto e azul escuro (5).png"
             alt="Foto de perfil">
+
         <div class="redes-sociais">
             <a href="https://www.linkedin.com/in/lucas-almeida-software-developer/">
-                <img src="./assets/61109 (1).png" alt="">
+                <img src="./assets/linkedin.png" alt="">
             </a>
 
             <a href="https://github.com/Lucas-Nascimentto">
@@ -41,10 +43,9 @@
                     src="./assets/png-transparent-github-computer-icons-github-logo-monochrome-head-thumbnail (1).png"
                     alt="">
             </a>
-
         </div>
-
     </section>
+
     <section class="curriculo">
         <img class="avatar" src="./assets/Me.png" alt="">
         <button onclick="imprimirCurriculo()">Currículo</button>
@@ -59,7 +60,7 @@
 
             Atualmente, estou em busca de novos desafios, com o objetivo de crescer profissionalmente, contribuir para
             equipes dinâmicas e continuar aprendendo. Entre os meus projetos, destaco a criação de sistemas de cadastro
-            de vendas, E-commerce de uma hamburgueria e  sites de serviços. Além disso, participei de
+            de vendas, E-commerce de uma hamburgueria e sites de serviços. Além disso, participei de
             hackathons, como o da UNIFAN, onde fui parte de uma equipe que teve excelente destaque.<br>
 
             Sou autodidata, persistente e sempre em busca de novas oportunidades para expandir meus conhecimentos e
@@ -69,59 +70,108 @@
 
     <section id="projetos" class="projetos">
         <h1>Meus Projetos</h1>
+
         <div class="carrossel">
             <button class="anterior">&#10094;</button> <!-- Seta esquerda -->
+
             <div class="projetos-container">
                 <div class="projeto">
                     <img class="imagem-projetos" src="./assets/Tela Hamburgueria.png" alt="">
                     <h2>Burger-Bliss</h2>
                     <p>E-commerce de uma Hamburgueria</p>
                     <div class="botoes">
-                        <button class="deploy">Deploy</button>
-                        <button class="github">Github</button>
+                        <a href="https://lucas-nascimentto.github.io/Burger-Bliss/">
+                            <button class="deploy">Deploy</button>
+                        </a>
+
+                        <a href="https://github.com/Lucas-Nascimentto/Burger-Bliss">
+                            <button class="github">Github</button>
+                        </a>
                     </div>
                 </div>
+
                 <div class="projeto">
                     <img class="imagem-projetos" src="./assets/Conversor de Moedas.png" alt="">
                     <h2>Conversor de Moedas</h2>
                     <p>Esse projeto simula um conversor de moedas</p>
                     <div class="botoes">
-                        <button class="deploy">Deploy</button>
-                        <button class="github">Github</button>
+                        <a href="https://lucas-nascimentto.github.io/conversor-de-moedas/">
+                            <button class="deploy">Deploy</button>
+                        </a>
+
+                        <a href="https://github.com/Lucas-Nascimentto/conversor-de-moedas">
+                            <button class="github">Github</button>
+                        </a>
                     </div>
                 </div>
+
                 <div class="projeto">
                     <img class="imagem-projetos" src="./assets/mario-bros.png" alt="">
                     <h2>Marios Bros</h2>
                     <p>Site para cliente do ramo de prestação de serviços</p>
                     <div class="botoes">
                         <button class="deploy">Deploy</button>
-                        <button class="github">Github</button>
+                        <a href="https://github.com/Lucas-Nascimentto/frontApiCadastroDeUsuarios">
+                            <button class="github">Github</button>
+                        </a>
                     </div>
                 </div>
+
                 <div class="projeto">
                     <img class="imagem-projetos" src="./assets/panificadora.png" alt="">
                     <h2>Panificadora Baraunas</h2>
                     <p>Controle eficiente do estoque, das vendas e geração de relatórios detalhados.</p>
                     <div class="botoes">
                         <button class="deploy">Deploy</button>
-                        <button class="github">Github</button>
+                        <a href="https://github.com/Lucas-Nascimentto/frontApiCadastroDeUsuarios">
+                            <button class="github">Github</button>
+                        </a>
                     </div>
+
                 </div>
+
                 <div class="projeto">
                     <img class="imagem-projetos" src="./assets/Cadastro-de-usuarios.png" alt="">
                     <h2>Cadastro de Usuários</h2>
                     <p>Controle de acesso do cadastro de usuários.</p>
                     <div class="botoes">
-                        <button class="deploy">Deploy</button>
-                        <button class="github">Github</button>
+                        <a href="https://luxury-daffodil-bfe639.netlify.app/">
+                            <button class="deploy">Deploy</button>
+                        </a>
+
+                        <a href="https://github.com/Lucas-Nascimentto/frontApiCadastroDeUsuarios">
+                            <button class="github">Github</button>
+                        </a>
                     </div>
                 </div>
+
             </div>
+
             <button class="proximo">&#10095;</button> <!-- Seta direita -->
         </div>
     </section>
-    
+
+    <section id="contato" class="contato">
+        <h1>Contato</h1>
+
+        <div class="contato-container">
+            <div class="contato-item">
+                <img src="./assets/email.png" alt="Ícone de Email">
+                <a href="mailto:lucasna.dev@gmail.com">lucasna.dev@gmail.com</a>
+            </div>
+
+            <div class="contato-item">
+                <img src="./assets/telefone.png" alt="Ícone de Telefone">
+                <a href="tel:+5575991110069">(75) 99111-0069</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Lucas Nascimento. Todos os direitos reservados.</p>
+    </footer>
+
+
 
 </body>
 
