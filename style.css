@@ -111,6 +111,12 @@ a:hover {
     transform: scale(1.2);
 }
 
+.perfil-redes-sociais{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
 #perfil {
     width: 20vw;
     position: relative;
@@ -121,10 +127,9 @@ a:hover {
 
 .redes-sociais {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     position: relative;
     top: 5rem;
-    left: -18rem;
     gap: 1rem;
 
 }
@@ -150,7 +155,7 @@ a:hover {
 
 .sobre {
     width: 50%;
-    margin-left: 15%;
+    margin-left: 7%;
     display: inline-block;
     margin-top: 18rem;
     margin-bottom: 15rem;
@@ -158,7 +163,7 @@ a:hover {
 }
 
 .sobre h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     background: linear-gradient(90deg, #a855f7, #9333ea);
     -webkit-background-clip: text;
@@ -169,7 +174,7 @@ a:hover {
 
 .sobre p {
     color: #FFF;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: justify;
 }
 
@@ -183,14 +188,14 @@ b {
     display: inline-block;
     height: 30vh;
     width: auto;
-    margin-left: 7%;
+    margin-left: 5%;
 }
 
 .curriculo button {
     color: #FFF;
     position: relative;
     top: -10rem;
-    left: 9.5rem;
+    left: 10rem;
     width: 10rem;
     height: 3rem;
     border-radius: 3%;
@@ -401,3 +406,193 @@ footer {
 footer p {
     background: none;
 }
+
+@media (max-width:1573px){
+    #portfolio {
+        margin-right: 5vw;
+    }
+}
+
+@media (max-width: 1453px){
+    .projeto {
+        min-width: calc(100% / 2 - 1.5rem);
+    }
+
+    .contato a{
+        font-size: 1rem;
+    }
+
+    .contato h1{
+        font-size: 2rem;
+    }
+
+    .avatar{
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1213px){
+    .curriculo-sobre{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .avatar{
+        width: 60%;
+        height: auto;
+    }
+
+    .curriculo button{
+        left: 8rem;
+    }
+
+    .contato{
+        width: 40%;
+    }
+
+    .contato a{
+        font-size: 1rem;
+    }
+
+    .contato h1{
+        font-size: 2rem;
+    }
+
+    .tecnologias p{
+        font-size: 2rem;
+    }
+
+    .sobre{
+        width: 80%;
+    }
+}
+
+@media (max-width: 959px){
+    .projeto {
+        min-width: calc(100% / 1 - 1rem);
+    }
+
+    .projeto img {
+        width: 70%;
+        border-radius: 0.625rem;
+    }
+
+    #portfolio{
+        display: none;
+    }
+
+    .contato{
+        width: 70%;
+    }
+}
+
+@media (max-width:650px){
+    .tecnologias p{
+        font-size: 1rem;
+    }
+
+    .sobre p{
+        font-size: 1rem;
+    }
+
+    .sobre h1{
+        font-size: 1.5rem;
+    }
+    
+    .tecnologias img{
+        width: 10%;
+    }
+
+    header{
+        gap: 1.5rem;
+    }
+
+    header a{
+        font-size: 1rem;
+    }
+
+    .projetos h1{
+        font-size: 2rem;
+    }
+
+    .contato{
+        width: 70%;
+    }
+
+    .avatar{
+        width: 50%;
+        height: auto;
+    }
+    
+    .home{
+        margin-top: 7rem;
+    }
+}
+
+@media (max-width: 530px){
+    .sobre p{
+        font-size: 0.8rem;
+    }
+
+    .sobre h1{
+        font-size: 1.4rem;
+    }
+
+    .avatar{
+        width: 60%;
+        height: auto;
+    }
+
+    .curriculo-sobre button{
+        width: 40%;
+        left: 7rem;
+        font-size: 1rem;
+    }
+
+    .tecnologias{
+        width: 55%;
+        margin-right: 2rem;
+    }
+
+    .projeto {
+        min-width: calc(100% / 1 - 0rem);
+    }
+}
+
+/* @media (max-width: 755px){
+    header{
+        font-size: 1.2rem;
+        gap: 1.5rem;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .tecnologias{
+        margin-top: 2rem;
+    }
+
+    .tecnologias img{
+        width: 15%;
+    }
+
+    .tecnologias p{
+        font-size: 1.2rem;
+    }
+
+    #perfil{
+        width: 40%;
+    }
+
+    .redes-sociais img{
+        width: 20%;
+    }
+   
+} */
